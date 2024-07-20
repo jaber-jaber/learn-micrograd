@@ -32,7 +32,7 @@ class Value:
     def __rmul__(self,  other):
         return self * other # Python handles a * b differently to b * a (for the case that b is not a "Value" object but rather just an int/float)
         # here we're using rmul to right multiply the values (instead of make it commutative, just swap them)
-        
+
     # division handling
     def __pow__(self, other):
         assert isinstance(other, (int, float)), "only supporting int/float pows for now
@@ -140,6 +140,3 @@ dz/dx = dy/dx * dz/dy
 
 Hyperbolic tangent function definition:
 tanhx = (e^2x - 1)/(e^2x+1)
-
-## What am I going to do with this information?
-- [ ] Implement micrograd but make it a bit more challenging? Maybe implement it in C, or build your own tensor library -- something to make it more difficult
