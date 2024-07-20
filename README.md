@@ -2,5 +2,3 @@ I am using this repository to learn and implement my own micrograd. Micrograd is
 
 My goal is to expand this a little to work with jnet, my machine learning library.
 You can refer to [jnet](https://github.com/jaber-jaber/jnet) for my future goals.
-
-My idea for this is to create my own tensor class to understand how tensors work.
